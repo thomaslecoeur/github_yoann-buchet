@@ -1,0 +1,112 @@
+<!doctype html>
+<html id="html-accueil">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Accueil &bull; Yoann Buchet</title>
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body id="html-accueil">
+        <div id="superglobal">
+            <div id="global">
+                <header class="menu">
+                    <div id="logo">
+                        <h1 class="title">Yoann Buchet</h1>
+                        <h2 class="subtitle">Multiservices</h2>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="active">Accueil</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="galerie.html">Galerie</a></li>
+                            <li><a href="tarifs.html">Tarifs</a></li>
+                            <li><a href="livreor.php">Livre d'or</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                </section>
+                <section id="accueil">
+                    <article class="centred">
+                        <header id="big_logo">
+                            <h1 class="title">Yoann Buchet</h1>
+                            <h2 class="subtitle">Multiservices</h2>
+                        </header>
+                        <br>
+                        <a href="#intro" id="click"></a>
+                        <div class="intro">
+                            <p class="intro">Une ampoule à changer ? - Un coup de peinture à donner ? - Un meuble à monter ?</p>
+                            <p class="intro">Une haie à tailler ? - Un arbre à élaguer ? - Un nouvel ordinateur à installer ? - Un grenier à évacuer ?..</p>
+                            <p class="intro centred">Autant de petits bricolages qui se résoudront avec du savoir-faire et de la bonne humeur. Le multiservices, c'est également répondre efficacement et professionnellement à tous vos travaux. Une nouvelle isolation, des volets colorés, une terrasse, un nouveau chez-vous du sol au plafond... Du conseil à la réalisation, vous serez accompagnés tout au long de votre projet.</p>
+                        </div>
+                        <!--
+                        <div class="intro">
+                            <p class="intro">Insérer le texte ici.</p>
+                        </div>
+                        -->
+                        <img src="img/accueil/coordonnees_accueil.svg" id="coordonnees_accueil" alt="coordonnées">
+                    </article>
+                </section>
+            </div>                 
+            <footer id="footer-accueil">
+                <p>Yoann-Buchet.fr © 2013 - 2014 | Tous droits réservés</p>
+                <p>Entreprise</p>
+            </footer>
+        </div>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript">
+            $("div.intro").hide();
+            $("header.menu").hide();
+            $("footer").hide();
+            $("img#coordonnees_accueil").hide();
+            $( "a" ).click(function() {
+                $(this).fadeOut(100);
+                $("header").slideDown(1000);
+                $("#big_logo .title")
+                .animate(
+                    {opacity : 0},
+                    400,
+                    function() {
+                        
+                        $("#big_logo .subtitle")
+                        .animate(
+                            {opacity : 0},
+                            300
+                            )   
+                        .animate(
+                            {height : 0},
+                            300,
+                            function() {
+                                $(this).hide();
+                            }
+                        );
+                    }
+                )
+                .animate(
+                    {height : 0},
+                    400,
+                    function() {
+                        $(this).hide();
+                        $("div.intro").fadeIn(500);
+                        $("img#coordonnees_accueil").fadeIn(500);
+                    }
+                )
+                .animate(
+                    {opacity: 100},
+                    400,
+                    function() {
+                        $("footer").fadeIn(800);
+                    }
+                );
+                
+            });
+        </script>
+    </body>
+</html>

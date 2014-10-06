@@ -1,0 +1,559 @@
+/*============================GENERAL=============================*/
+
+
+/*............................BODY................................*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#html-accueil, #html-tarifs {
+	height: 100%;
+}
+body {
+	/*background-image: url("../img/fond.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #252a45;
+	background-attachment:fixed;*/
+	min-width: 960px;
+}
+
+#b-accueil, #b-tarifs {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.centred {
+	text-align: center;
+}
+
+
+
+
+/*............................HEADER..............................*/
+
+header.menu {
+	background-color: #2d1929;
+	width: 100%;
+	min-width: 1050px;
+	height: 80px;
+}
+
+#logo {
+	float: left;
+	margin-left: 50px;
+	margin-top: -10px;
+	position: relative;
+	top: 5px;
+}
+
+#logo h1.title {
+	font-family: 'Rochester', cursive;
+	font-weight: 100;
+	color: #ffb465;
+	font-size: 60px;
+}
+
+#logo h2.subtitle {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: 7px;
+	font-size: 12px;
+	left: 110px;
+	top: -12px;
+	left: 60px;
+	color: #fff;
+	position: relative;
+}
+
+nav ul {
+	margin-right: 50px;
+	float: right;
+}
+
+nav li {
+	float: left;
+	list-style: none;	
+	text-align: center;
+	padding: 0 25px;
+}
+
+nav li a {
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	height: 80px;
+	line-height: 80px;
+}
+
+nav li a.active {
+	color: #ffb465;
+}
+
+nav li a:hover {
+	color: #ffb465;	
+	-webkit-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+}
+
+/*.............................SECTION............................*/
+
+section {
+	width: 960px;
+	margin: 50px auto;
+	border-radius: 6px;
+}
+
+section#tarifs, article.message, article#formulaire, article#coordonnees  {
+	background-color: #2d1929;
+}
+
+#galerie p, #tarifs p, .message p {
+	color: #FFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	line-height: 1.5;
+	font-size: 15px;
+	margin: 0 30px;
+}
+
+h1.titre {
+	font-family: 'Rochester', cursive;
+	color: #2d1929;
+	font-size: 35px;
+	padding: 20px 20px 10px 20px;
+}
+
+h2.titre {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #ffb465;
+	font-size: 20px;
+	padding: 20px 20px 10px 20px;
+}
+
+input, textarea {
+	display: inline-block;
+	width: 400px;
+	border: solid 1px #d2d2d2;
+	border-radius: 2px;
+	padding:10px;
+	margin-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+	box-sizing:	border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border: solid 1px #ffb465;
+}
+
+input#button_submit, input#button_reset {
+	background-color: #ecf0f1;
+	box-shadow: 0 3px 0 #7f8c8d;
+	color: #2d1929;
+	border: none;
+}
+
+input#button_submit:hover, input#button_reset:hover {
+	-webkit-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	margin-top: 2px;
+}
+
+input#button_submit:hover {
+	background-color: #7fe58b;
+	box-shadow: 0 1px 0 #62b273;
+}
+
+input#button_reset:hover {
+	background-color: #e57f7f;
+	box-shadow: 0 1px 0 #b26262;
+}
+
+input#button_submit:active, input#button_reset:active {
+	background-color: #888 !important;
+	box-shadow: 0 1px 0 #666 !important;
+	color: #eee;
+}
+
+/*.............................FOOTER.............................*/
+
+#superglobal{
+	position : relative;
+	min-height: 100%;
+}
+
+#global{
+	position: relative;
+	min-height: 100%;
+}
+
+footer {
+	height: 80px;
+	width: 100%;
+	background-color: #2d1929;
+}
+
+#footer-accueil, #footer-tarifs {
+	position: absolute;
+	bottom: 0px;
+}
+
+footer p {
+	text-align: center;
+	color: #FFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	line-height: 40px;
+	font-size: 15px;
+	margin: 0 30px;
+
+}
+
+/*============================PER PAGE============================*/
+
+
+/*............................ACCUEIL.............................*/
+
+header#big_logo {
+	display: inline-block;
+	width: 100%;
+}
+
+header#big_logo h1.title {
+	font-family: 'Rochester', cursive;
+	font-weight: 100;
+	color: #ffb465;
+	font-size: 100px;
+}
+
+header#big_logo h2.subtitle {
+	position: relative;
+	top:-25px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: 15px;
+	font-size: 25px;
+	color: #2d1929;
+}
+
+img#coordonnees_accueil {
+	display: inline-block;
+}
+
+a#click {
+	background-image: url("../img/Accueil/rouleauaccueil2.png");
+	display: inline-block;
+	margin-top: 100px;
+	background-repeat:no-repeat;
+	width: 400px;
+	height: 108px;
+	/*
+	display:inline-block;
+	margin: 150px auto 0 auto;
+	background-color: #eee;
+	background-image: url("../img/accueil/cliquez-ici_violet.png");
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	*/
+}
+
+a#click:hover {
+	/*
+	background-color: #2d1929;
+	background-image: url("../img/accueil/cliquez-ici_jaune.png");
+	*/
+	background-image: url("../img/Accueil/rouleauaccueil.png");
+	-webkit-transition: background 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: background 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: background 0.5s cubic-bezier(.75,.19,.56,1.02);
+	transition: background 0.5s cubic-bezier(.75,.19,.56,1.02);
+}
+
+div.intro {
+	background-color: #2d1929;
+	border-radius: 6px;
+	margin-bottom: 50px;
+	padding: 50px;
+}
+
+p.intro {
+	padding: 10px;
+	color: #fff;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+/*...........................SERVICES.............................*/
+
+#service .tabs {
+	float: left;
+	width: 450px;
+}
+
+#service .tabs a {
+	display: block;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: 100;
+	color: #000;
+	background-color: #eee;
+	line-height: 40px;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px; 
+}
+
+#service .tabs a#first-tab {
+	margin-top: 20px;
+}
+
+#service .tabs a:hover {
+	color: #fff;
+	background-color: #7f6988;
+}
+
+#service .tabs a.active {
+	color: #ffb465;
+	background-color: #2f1929;
+}
+
+#service .swiper-container {
+	background-color: #2f1929;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 510px;
+	height: 500px;
+	margin-left: 450px;
+}
+
+#service .content-slide p.slide {
+	color: #FFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	padding: 0 20px 0 120px;
+}
+
+#service .content-slide p#court {
+	margin-bottom: 80px;
+}
+
+#service .content-slide img {
+	float: left;
+	width: 90px;
+	margin-left: 20px;
+}
+
+/*............................GALERIE.............................*/
+/*
+#galerie li {
+	list-style: none;
+}
+
+#galerie a {
+	margin-right: -4px;
+}
+
+#galerie img {
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+*/
+
+#galerie .tabs {
+	float: left;
+	width: 360px;
+}
+
+#galerie .tabs a {
+	display: block;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: 100;
+	color: #000;
+	background-color: #eee;
+	line-height: 40px;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	transition: all 0.5s cubic-bezier(.75,.19,.56,1.02);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px; 
+}
+
+#galerie .tabs a#first-tab {
+	margin-top: 20px;
+}
+
+#galerie .tabs a:hover {
+	color: #fff;
+	background-color: #7f6988;
+}
+
+#galerie .tabs a.active {
+	color: #ffb465;
+	background-color: #2f1929;
+}
+
+#galerie .swiper-container {
+	background-color: #2f1929;
+	border-radius: 6px;
+	overflow: hidden;
+	width: 600px;
+	height: 520px;
+	margin-left: 360px;
+}
+
+#galerie .content-slide {
+}
+
+#galerie .content-slide .slider, .content-slide .carousel {
+	margin: auto;
+}
+
+#galerie .content-slide .slider {
+	padding-top: 35px;
+}
+
+#galerie .content-slide .carousel {
+	margin-top: 2px;
+}
+
+/*............................TARIFS..............................*/
+
+#tarifs {
+	height: 222px;
+}
+
+#tarifs a {
+	border-radius: 2px;
+	width: 320px;
+	line-height: 30px;
+	padding: 5px 15px;
+	margin: 20px auto;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	background-color: #ecf0f1;
+	box-shadow: 0 3px 0 #7f8c8d;
+	color: #2d1929;
+}
+
+#tarifs a:hover {
+	-webkit-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	-moz-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	-o-transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	transition: all 0.3s cubic-bezier(.75,.19,.56,1.02);
+	background-color: #e5af7f;
+	margin-top: 22px;
+	box-shadow: 0 1px 0 #b28862;
+}
+
+#tarifs a:active {
+	background-color: #888 !important;
+	box-shadow: 0 1px 0 #666 !important;
+	color: #eee;
+}
+
+/*..........................LIVRE D'OR............................*/
+
+#ajout_avis {
+	height: 330px;
+}
+
+form#form_livreor textarea {
+	width: 805px !important;
+	height: 150px;
+}
+
+form#form_livreor input#button_submit {
+	margin-right: 50px;
+}
+
+form#form_livreor input#button_submit, form#form_livreor input#button_reset {
+	width: 300px !important;
+}
+
+section.temoignages {
+
+}
+
+section.temoignages h1 {
+	font-size: 30px !important;
+}
+article.message {
+	border-radius: 6px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+
+article.message p.date {
+	text-align: right;
+	color: #ffb465;
+}
+
+
+
+/*............................CONTACT.............................*/
+
+#contact {
+	height: 500px;
+}
+
+#formulaire {
+	float: left;
+	height: 470px;
+}
+
+#formulaire, #coordonnees {
+	width: 470px;
+	border-radius: 6px;
+}
+
+div#groupe1, div#groupe2 {
+	padding-bottom: 15px;
+}
+
+form#form_contact textarea {
+	height: 120px;
+}
+
+#coordonnees {
+	float: right;
+	padding-bottom: 20px;
+}
+
+#coordonnees img#coordonnees_svg {
+	margin-left: 35px;
+}
+
+#coordonnees img#photo_yoann {
+	width: 180px;
+	border-radius: 100%;
+}
+
